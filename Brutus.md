@@ -21,7 +21,7 @@ Successful authentication as the user `root` at 06:32:44:
 37
 
 ### The attacker added a new user as part of their persistence strategy on the server and gave this new user account higher privileges. What is the name of this account?
-cyberjunkie. sudo, or super-user do, is a utility to allow non-root users to run specific commands as another user. The sudo group is for users who can run any command as root with sudo. cyberjunkie is the answer
+cyberjunkie.
 
 ### What is the MITRE ATT&CK sub-technique ID used for persistence?
 T1136.001
