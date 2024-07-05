@@ -10,7 +10,7 @@ It appears that the IP 65.2.161.68 continuously keeps failing to authenticate. T
 
 ### The brute force attempts were successful, and the attacker gained access to an account on the server. What is the username of this account?
 Successful authentication as the user `root` at 06:32:44:
-![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/138898f9-f4ca-4462-8401-4fa392c252a6)
+![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/d93da765-46b4-40d2-8fb7-57972efc20b1)
 
 ### Can you identify the timestamp when the attacker manually logged in to the server to carry out their objectives?
 2024-03-06 06:32:45
