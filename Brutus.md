@@ -1,6 +1,7 @@
 # Scenario
 You will familiarize yourself with Unix auth.log and wtmp logs. We'll explore a scenario where a Confluence server was brute-forced via its SSH service. After gaining access to the server, the attacker performed additional activities, which we can track using auth.log. Although auth.log is primarily used for brute-force analysis, we will delve into the full potential of this artifact in our investigation, including aspects of privilege escalation, persistence, and even some visibility into command execution.
-Logs: [Brutus.zip](https://github.com/user-attachments/files/16104805/Brutus.zip) pass: hacktheblue
+
+Log files: [Brutus.zip](https://github.com/user-attachments/files/16104805/Brutus.zip) pass: hacktheblue
 
 # Goal
 The goal is to analyze the auth.log and the wtmp log files and answer the following questions as part of the incident response:
