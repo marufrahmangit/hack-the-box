@@ -27,6 +27,7 @@ cyberjunkie.
 
 ### What is the MITRE ATT&CK sub-technique ID used for persistence?
 [T1136.001](https://attack.mitre.org/techniques/T1136/001/)
+
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/78b15345-d619-4edb-b589-fb27cd95a572)
 
 ### How long did the attacker's first SSH session last based on the previously confirmed authentication time and session ending within the auth.log? (seconds)
