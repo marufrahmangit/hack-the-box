@@ -1,1 +1,1 @@
-Data Forensic and Incident Response challenges taken and completed from the popular hackthebox platform.
+Data Forensic and Incident Response challenges completed from the popular [hackthebox](https://app.hackthebox.com/sherlocks) platform.
