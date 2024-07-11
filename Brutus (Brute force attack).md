@@ -4,7 +4,7 @@ You will familiarize yourself with Unix auth.log and wtmp logs. We'll explore a 
 Log files: [Brutus.zip](https://github.com/user-attachments/files/16104805/Brutus.zip) pass: hacktheblue
 
 # Goal
-The goal is to analyze the auth.log and the wtmp log files and answer the following questions as part of the incident response:
+The goal is to analyze the auth.log and the wtmp log files and answer the following questions as part of the incident response.
 
 # Response
 ### Analyzing the auth.log, can you identify the IP address used by the attacker to carry out a brute force attack?
