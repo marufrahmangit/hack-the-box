@@ -5,6 +5,7 @@ Log files: [campfire-2.zip](https://github.com/user-attachments/files/16158289/c
 # Goal
 The goal is to investigate Windows event logs to detect common Active Directory credential attacks such as ASREP Roasting and Kerebroasting by focusing on key event IDs and key attributes.
 
+# Response
 ### When did the ASREP Roasting attack occur, and when did the attacker request the Kerberos ticket for the vulnerable user?
 Check the Event ID log reference (found online):
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/d1994b15-a22b-404d-a762-f4184c2bc85a)
