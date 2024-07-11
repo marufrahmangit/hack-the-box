@@ -6,6 +6,7 @@ Log files: [Brutus.zip](https://github.com/user-attachments/files/16104805/Brutu
 # Goal
 The goal is to analyze the auth.log and the wtmp log files and answer the following questions as part of the incident response:
 
+# Response
 ### Analyzing the auth.log, can you identify the IP address used by the attacker to carry out a brute force attack?
 It appears that the IP 65.2.161.68 continuously keeps failing to authenticate. These logs show someone trying to log in as admin, and the system saying that there is no user admin. These failed login run from 06:31:33 to 06:31:42, suggesting a brute force tool or script is running, as a user at the keyboard could not type that fast:
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/9de73f1f-2085-4d7c-8c9b-5e7dce21dc89)
