@@ -7,13 +7,13 @@ The goal is to investigate Windows event logs to detect common Active Directory 
 
 # Response
 ### When did the ASREP Roasting attack occur, and when did the attacker request the Kerberos ticket for the vulnerable user?
-Check the Event ID log reference (found online):
+Check the Windows Event ID log reference (found online):
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/d1994b15-a22b-404d-a762-f4184c2bc85a)
 
 Use the event ID 4768 to filter the log to find Kerberos authentication ticket requests:
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/b588dfbf-700d-46ba-b66e-e980162a1344)
 
-Among the events, the one with __pre-authentication type set to 0__ (General tab) satisfies this criteria:
+Among the events, the one with __pre-authentication type set to 0__ (Logon without Pre-Authentication) satisfies this criteria:
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/21826105-3173-4c07-9ab4-fdb75d6f8f4b)
 
 Check the XML view (Details tab) to see the timestamp. The answer is ***5/29/2024 1:36:40 PM***:
