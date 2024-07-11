@@ -17,7 +17,7 @@ Among the events, the one with __pre-authentication type set to 0__ (General tab
 ![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/21826105-3173-4c07-9ab4-fdb75d6f8f4b)
 
 Check the XML view (Details tab) to see the timestamp. The answer is ***5/29/2024 1:36:40 PM***:
-![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/9fdc6063-b3ae-466e-a965-7dfa4394860a)
+![image](https://github.com/marufrahmangit/hack-the-box/assets/25085219/b470231b-a4d3-4302-8baa-f382e1743e39)
 
 ### Please confirm the User Account that was targeted by the attacker.
 
