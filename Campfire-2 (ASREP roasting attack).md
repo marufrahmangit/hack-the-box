@@ -3,7 +3,7 @@ Forela's Network is constantly under attack. The security system raised an alert
 Log files: [campfire-2.zip](https://github.com/user-attachments/files/16158289/campfire-2.zip) pass: hacktheblue
 
 # Goal
-The goal is to investigate Windows event logs to detect common Active Directory credential attacks such as ASREP Roasting and Kerebroasting by focusing on key event IDs and key attributes.
+The goal is to investigate Windows event logs to detect common Active Directory credential attacks such as ASREP Roasting and Kerebroasting by focusing on key event IDs and key attributes, and, answer the following questions as part of the incident response.
 
 # Response
 ### When did the ASREP Roasting attack occur, and when did the attacker request the Kerberos ticket for the vulnerable user?
