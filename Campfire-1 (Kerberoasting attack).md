@@ -37,6 +37,7 @@ Finding the answer required a few steps:
 6. Of all the file names this looked suspicious and it is also an executable file: 
 ![image](https://github.com/user-attachments/assets/7df9a7ef-2b11-4724-b57b-f52a05cae120)
 ***\VOLUME{01d951602330db46-52233816}\USERS\ALONZO.SPIRE\DOWNLOADS\RUBEUS.EXE***
+
 The answer is ***C:\Users\Alonzo.spire\Downloads\Rubeus.exe***
 
 
