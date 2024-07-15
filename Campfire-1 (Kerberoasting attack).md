@@ -29,7 +29,8 @@ Using powershell logs and filter for event ID 4104: ***powerview.ps1***
 
 ### What is the full path of the tool used to perform the actual kerberoasting attack?
 Finding the answer required a few steps:
-1. Download the PeCMD (zimmerman tool) and add it to the environment variable (Windows OS).
+1. Download the PeCMD (zimmerman tool) and add it to the environment variable (Windows OS):
+![image](https://github.com/user-attachments/assets/1baa22e0-2e6a-4505-9e72-ecff1bd86ac4)
 2. Parse the prefetch files using the command: **Pecmd.exe -d "Path of prefetch Artifacts" --csv . --csvf result.csv**
 3. Open the parsed ***result.csv*** file using TimelineExplorer (zimmerman tool)
 4. Find the timeline established so far; a row gets filters using this timeline > ***2024-05-21 03:18:09***
@@ -40,5 +41,8 @@ Finding the answer required a few steps:
 
 The answer is ***C:\Users\Alonzo.spire\Downloads\Rubeus.exe***
 
+### When was the tool executed to dump credentials?
+According to the  "Last Run" Value in the PEcmd output the answer is ***2024-05-21 03:18:08***
+![image](https://github.com/user-attachments/assets/3501243a-cea5-42b4-8a50-6e1dc6ea8e8f)
 
 
