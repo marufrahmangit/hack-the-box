@@ -65,3 +65,5 @@ Next, I did something similar to find the `NTProofStr` value. In details of the 
 ![image](https://github.com/user-attachments/assets/3fb03647-be4d-4a8c-9d55-fe28213ce34d)
 
 ***c0cc803a6d9fb5a9082253a04dbd4cd4***
+
+Next, I tested the password complexity by recoerving the password from the information found from packet capture. This is a crucial step as this way we can find whether the attacker was able to crack this and how quickly.
