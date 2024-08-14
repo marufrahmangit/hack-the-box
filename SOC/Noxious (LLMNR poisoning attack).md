@@ -16,8 +16,21 @@ Later, during a video call with a business partner, a member of the sales team f
 
 |Control|Least privilege|
 |---------------|------------------------------------------------------------------------------------------------|
-|Issue(s)       |What factors contributed to the information leak?                                               |
-|Review       |What does NIST SP 800-53: AC-6 address?                                               |
-|Recommendation(s)       |How might the principle of least privilege be improved at the company?                                               |
-|Justification       |How might these improvements address the issues?                                               |
+|Issue(s)       |What factors contributed to the information leak? *The access to the internal folder was made public for everyone. Currently,
+this applies for both the sales team and manager. Without authorized
+permission, the business partner should not share confidential information
+on social media.*                                             |
+|Review       |What does NIST SP 800-53: AC-6 address? *How organizations can protect their data privacy by implementing least
+privilege. Control enhancement to improve the effectiveness of least
+privilege.
+Least privilege: a user or entity should only have access to the specific data,
+resources and applications needed to complete a required task*                                               |
+|Recommendation(s)       |How might the principle of least privilege be improved at the company? *Restrict access to sensitive resources based on the user role (Role
+Based Access)
+Regularly audit user privilege *                                               |
+|Justification       |How might these improvements address the issues? *● Restrict the internal files only to employees only.
+● Requiring managers and security teams to regularly audit access to
+team files would help limit the exposure of sensitive information.*                                               |
+
+
 
