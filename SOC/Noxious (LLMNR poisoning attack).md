@@ -66,4 +66,6 @@ Next, I did something similar to find the `NTProofStr` value. In details of the 
 
 ***c0cc803a6d9fb5a9082253a04dbd4cd4***
 
-Next, I tested the password complexity by recoerving the password from the information found from packet capture. This is a crucial step as this way we can find whether the attacker was able to crack this and how quickly.
+Next, I tested the password complexity by recovering the password from the information found in packet capture. This is a crucial step as this way we can find whether the attacker was able to crack this and how quickly.
+
+- Created a new file and plugged in the values as follows. `User::Domain:ServerChallenge:NTProofStr:NTLMv2Response(without first 16 bytes)`. The NTLMv2 Response value can be found from where we found NTProofStr. Removed the first 16 bytes(32 characters) from the value. Then cracked the hash using hashcat.
