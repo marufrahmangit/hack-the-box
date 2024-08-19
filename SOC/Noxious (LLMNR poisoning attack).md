@@ -68,4 +68,29 @@ Next, I did something similar to find the `NTProofStr` value. In details of the 
 
 Next, I tested the password complexity by recovering the password from the information found in packet capture. This is a crucial step as this way we can find whether the attacker was able to crack this and how quickly.
 
-- Created a new file and plugged in the values as follows. `User::Domain:ServerChallenge:NTProofStr:NTLMv2Response(without first 16 bytes)`. The NTLMv2 Response value can be found from where we found NTProofStr. Removed the first 16 bytes(32 characters) from the value. Then cracked the hash using hashcat.
+- Created a new file (hashfile.txt) and plugged in the values as follows. `User::Domain:ServerChallenge:NTProofStr:NTLMv2Response(without first 16 bytes/first 32 characters)`. The NTLMv2 Response value is available where we found NTProofStr. Removed the first 16 bytes(32 characters) from the value.
+
+![image](https://github.com/user-attachments/assets/4129338a-3a64-4a4f-ad94-104d4273c2df)
+
+-  Ran hashcat on a password list and the hashfile
+
+![image](https://github.com/user-attachments/assets/f35f5a0b-e5c0-435c-ae4d-33a4c5908ed1)
+
+- Cracked the hash
+
+![image](https://github.com/user-attachments/assets/cf65dc9c-73db-41bf-81aa-e011c39d863e)
+
+***NotMyPassword0K?***
+
+Just to get more context surrounding the incident, I found actual file share that the victim was trying to navigate to by filtering for SMB traffic and scrolled to find a tree `connect/disconnect` of a `NON-DEFAULT File` share name.
+
+![image](https://github.com/user-attachments/assets/7b5b0bcd-0d0a-4ca0-bb31-63a26d34d151)
+
+***\\DC01\DC-Confidential***
+
+
+
+
+
+
+
