@@ -48,9 +48,9 @@ To find when the hashes were captured the **First** time, I modified the wiresha
 
 ***2024-06-24 11:18:30***
 
-The typo made by the victim when navigating to the file share caused his credentials to be leaked. When looking at LLMNR traffic I saw that attackers machine responded to a query `"DC01"` which means that the victim typed `DCC01` instead of `DC01` which caused the DNS to fail and the machine to fall back to LLMNR protocol to resolve the query and thats where attackers rogue machine responded to the query pretending to be a domain controller. TO further confirm this typo in `ntlmssp` packets I can check the `netname` value.
+The typo made by the victim when navigating to the file share caused his credentials to be leaked. When looking at LLMNR traffic I saw that attackers machine responded to a query `"DC01"` which means that the victim typed `DCC01` instead of `DC01` which caused the DNS to fail and the machine to fall back to LLMNR protocol to resolve the query and thats where attackers rogue machine responded to the query pretending to be a domain controller.
 
-...add an image...
+![image](https://github.com/user-attachments/assets/750c7e6c-06c1-4786-93ba-86cce20ef855)
 
 ***DCC01***
 
@@ -82,15 +82,9 @@ Next, I tested the password complexity by recovering the password from the infor
 
 ***NotMyPassword0K?***
 
-Just to get more context surrounding the incident, I found actual file share that the victim was trying to navigate to by filtering for SMB traffic and scrolled to find a tree `connect/disconnect` of a `NON-DEFAULT File` share name.
+Just to get more context surrounding the incident, I found actual file share that the victim was trying to navigate to by filtering for SMB traffic and scrolled to find a tree connect/disconnect of a NON-DEFAULT File share name.
 
 ![image](https://github.com/user-attachments/assets/7b5b0bcd-0d0a-4ca0-bb31-63a26d34d151)
 
 ***\\DC01\DC-Confidential***
-
-
-
-
-
-
 
