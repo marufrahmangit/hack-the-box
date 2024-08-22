@@ -88,3 +88,19 @@ Just to get more context surrounding the incident, I found actual file share tha
 
 ***\\DC01\DC-Confidential***
 
+# Summary
+
+- In LLMNR traffic, look for any machine responding to queries that is not a domain controller.
+
+- Look for NTLM authentication packets going towards the unidentified/unknown machine discovered from point 1.
+
+- Look for typos in LLMNR traffic, DNS traffic, and SMB traffic.
+
+- Try cracking the hash to assess the resilience of the compromised user's password.
+
+- As a follow-up, look for authentications from the compromised user in the environment, particularly after the time of LLMNR poisoning. Focus on logon types three (3) (network logon) and 10 (RDP logon).
+
+# Remediation
+If LLMNR and NBT-NS are not required in the environment, they should be disabled entirely as a mitigation measure.
+
+If a particular organization is unable to disable the LLMNR and NBT-NS protocols, they can consider implementing Network Access Control (NAC) and requiring long and complex passwords to reduce the chances of attackers cracking them offline.
